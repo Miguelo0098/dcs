@@ -1,0 +1,114 @@
+Introducción proceso unificado
+- Tendencia actual:
+	- Organización de una empresa
+		- Habilidades de individuos altamente cualificados
+		- Sin dirección sobre las políticas y procedimientos a seguir.
+	- Software
+		- Construcción de sistemas más grandes y más potentes
+			-Computadores más potentes
+			-Uso creciente de internet
+		- Mejor adaptado a nuestras necesidades.
+		- Menor tiempo de salida a mercado.
+- Es importante tener una buena planificación y comunicación
+- Necesidad de organización
+	- Forma coordinada de trabajar
+	- Pautas de cómo trabajar
+	- Proceso que intedre las diferentes fases del desarrollo
+- Tipo de proceso:
+	- Proporcione una guía para ordenar las actividades de un equipo
+	- Dirija las tareas de cada desarrollador por separado y del equipo como un todo
+	- Especifique los artefactos que deben desarrollarse
+	- Ofrezca criterios para el control y la medición de los productos y actividades del proyecto
+- Proceso de desarrollo de software
+	- Proceso define:
+		- Quién está haciendo qué, cuándo, y cómo alcanzar un determinado objetivo
+	- Objetivo en la ingeniería del software
+		- Construir un producto software
+		- Mejorar uno existente
+	- Partiendo de los requisitos del usuario, el proceso nos irá guiando hasta la realización del sistema software que nos interesa.
+	- Actividades fundamentales
+		- Especificaciones del software
+		- Diseño e implementación del software
+		- Pruebas del software
+		- Evolución del software
+	- Flujo de actividades
+		- Lineal
+		- Iterativo
+		- Evolutivo
+		- Paralelo
+	- Paradigmas de desarrollo
+		- Tradicional
+		- Orientado a objetos
+		- Ágil
+	- Ejemplos de modelos: 
+		- Proceso en cascada
+		- Prototipos
+	- Proceso complejo para proyectos medios o grandes
+		- Dividir un proyecto en mini-proyectos
+		- Cada mini-proyecto es una iteración
+		- Cada iteración tiene todos los elementos de un proyecto
+		- Cada iteración genera una línea base
+		- Cada iteración se construye sobre las anteriores
+		- La diferencia entre dos líneas base se conoce como incremento
+		- Ejemplo: proceso incremental
+- Proceso Unificado de Desarrollo de Software
+	- Objetivo: guiar a los desarrolladores en la implementación y distribución eficiente de sistemas que se ajusten a las necesidades de los clientes
+- Proceso Unificado
+	- Proceso genérico de desarrollo de software
+		- Adaptarlo a una empresa y a cada proyecto en particular
+		- Modela el "quién"
+		- Modela el "qué"
+		- Modela el "cómo"
+	- La adaptación debe definir e incluir
+		- Estándares internos
+		- Plantillas para documentos
+		- Herramientas
+		- Bases de datos
+		- Modificaciones del ciclo de vida
+	- Características
+		- Está basado en componentes
+		- Utiliza el Lenguaje Unificado de Modelado (UML)
+	- Axiomas básicos
+		- Dirigido por casos de uso y riesgos
+		- Centrado en la arquitectura
+		- Iterativo e incremental
+- USDP: Axiomas (Casos de uso)
+	- ¿Qué significa?
+		- EL proceso de desarrollo sigue un hilo que parte de los casos de uso
+		- Se desarrollan a la vez que la arquitectura del sistema, no aisladamente
+	- Sistema software terminado
+		- Dará cierto servicio a los usuarios
+		- Sea éxito
+	- Usuario
+		- Alguien o algo que interactúa con el sistema
+	- Una interacción es un caso de uso
+		- Fragmento de funcionalidad del sistema que proporciona una funcionalidad importante
+		- Representan los requisitos funcionales
+- USDP: Axiomas (Centrado en arquitectura)
+	- Arquitectura software define:
+		- Visión estática
+		- Visión funcional
+		- Visión dinámica
+	- Ensamblar los diversos elementos de manera adecuada
+		- Satisfacer funcionalidad y requerimientos del sistema
+	- Influenciada por
+		- Plataforma en la que debe funcionar el software
+		- Bloques de construcción reutilizables
+		- Sistemas heredados
+		- Requisitos no funcionales
+- USDP: Axiomas (Iterativo e incremental)
+	- ¿Qué significa?
+		- Construimos el software en un proceso de mejora, paso a paso
+	- Cada iteración (mini-proyecto)
+		- Trata un conjunto de casos de uso
+		- Análisis, diseño, implementación y prueba
+		- Código ejecutable
+- USDP: Flujos de trabajo
+	- Cada iteración
+		- 5 workflows centrales: requisitos, análisis, diseño, implementación, prueba
+		- Otros (no cubiertos por USDP)
+- USDP: fases
+	- Ciclo de vida de un proyecto
+		- 4 fases: comienzo, elaboración, construcción y transición
+		- Cada fase una o más iteraciones
+		- Cada fase termina con un hito importante 
