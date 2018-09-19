@@ -112,3 +112,52 @@ Introducción proceso unificado
 		- 4 fases: comienzo, elaboración, construcción y transición
 		- Cada fase una o más iteraciones
 		- Cada fase termina con un hito importante 
+- USDP: fases (comienzo)
+	- Objetivos
+		- Establecer la viabilidad del proyecto
+		- Capturar los requisitos esenciales
+		- Identificar riesgos críticos
+	- Foco de actividad
+		- Requisitos y Análisis
+		- Diseño e implementación
+		- Prueba
+	- Hito: tener claro los objetivos
+-USDP: fases (elaboración)
+	- Objetivos
+		- Crear una línea base ejecutable de la arquitectura
+		- Mejorar el análisis de riesgos
+		- Definir atributos de calidad
+		- Capturar casos de uso (80% requisitos funcionales)
+		- Crear un plan detallado de la fase de construcción
+		- Formular una oferta que incluya recursos, tiempo, personal y coste
+		- Foco de actividad
+			- Requisitos+
+			- Análisis+
+			- Diseño+
+			- Implementación
+			- Prueba
+	- Hito: Arquitectura del sistema 
+USDP: fases (construcción)
+	- Objetivos:
+		- Crear el producto
+		- Evolucionar la línea base de la arquitectura generada en la elaboración hacia el sistema final
+	- Foco de actividad
+		- Requisitos
+		- Análisis
+		- Diseño
+		- Implementación+
+		- Prueba+
+	- Hito: Capacidad operativa inicial
+USDP: fases (transición)
+	- Objetivos
+		- Corregir defectos
+		- Preparar los sitios del usuario para el nuevo software y adaptar el software para que funcione en ellos
+		- Crear manuales de usuario y otra documentación
+		- Proporcionar consultoría al usuario
+		- Realizar una revisión después del proyecto
+	- Foco de actividad
+		- Requisitos y Análisis
+		- Diseño
+		- Implementación+
+		- Prueba+
+	- Hito: versión del producto
