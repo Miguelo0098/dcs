@@ -12,3 +12,72 @@ WorkFlow: Requisitos Introducción
 		- Comprender el contexto del sistema
 		- Capturar requisitos funcionales
 		- Capturar requisitos no funcionales
+	- Enumerar requisitos candidatos
+		- Creación de una lista de características que podría tener el sistema (buenas ideas)
+		- Información sobre cada característica
+	- Comprender el contexto del sistema
+		- Modelado del dominio
+		- Modelado del negocio
+	- Captura de requisitos funcionales
+		- Afirmaciones sobre lo que el sistema debería hacer
+		- Afirmaciones sobre la funcionalidad del sistema
+	- Captura de requisitos no funcionales
+		- Propiedades del sistema
+- Descripción
+	- Artefacto
+		- Elemento de información tangible que es creada, modificada y usada por los trabajadores
+	- Trabajador
+		- Puesto al que se le puede asignar una persona real
+		- Tiene asignadas unas responsabilidades y el comportamiento esperado.
+	- Flujo de trabajo
+		- Diagrama que incluye a los trabajadores, las actividades que realizan y los artefactos que producen
+- Artefactos
+	- Modelos de caso de uso
+		- Diferentes casos de uso
+		- Actores
+		- Relaciones
+	- Modelo de requisitos
+		- Requisitos funcionales
+		- Requisitos no funcionales
+	- Descripción de la arquitectura
+		- Vista de la arquitectura del modelo de casos de uso
+		- Casos de uso críticos
+	- Glosario
+		- Términos comunes importantes que se utilizan al describir el sistema
+		- Consenso en las definiciones de conceptos y nociones
+		- Reduce el riesgo de confusiones
+	- Prototipo de interfaz de usuario
+		- Ayuda a comprender y especificar las interacciones entre los actores y el sistema
+- Trabajadores
+	- Analista de sistemas
+		- Responsable de modelo de casos de uso, actores y glosario
+		- No es responsable de cada caso de uso en particular
+	- Especificaciones de caso de uso
+		- Responsable de descripción detallada de uno o más casos de uso
+	- Ingeniero de requisitos
+		- Responsable de capturar los requisitos y priorizarlos
+	- Arquitecto
+		- Responsable de priorizar los casos de uso y relacionarlos con los requisitos
+	- Diseñador de interfaz de usuario
+		- Responsable de prototipar la interfaz de usuario
+- Actividades
+	- Encontrar actores y casos de uso
+		- Delimitar el sistema de su entorno
+		- Esbozar quién y qué interactuarán con el sistema
+		- Esbozar qué funcionalidad se espera del sistema
+		- Capturar y definir un glosario de términos comunes
+	- Priorizar casos de uso
+		- Cuáles son necesarios desarrollar en las primeras iteraciones
+	- Detallar casos de uso
+		- Describir flujo de sucesos en detalle
+	- Prototipar la interfaz de usuario
+		- Construir un prototipo de la interfaz de usuario
+	- Estructurar el modelo de casos de uso
+		- Extraer descripciones de funcionalidad generales y compartidas
+		- Extraer descripciones adicionales u opcionales
+- Especificación de requisitos software (SRS)
+	- Fase más temprana del proceso de construcción del software
+		- Se utiliza como entrada para el análisis y el diseño
+	- Se utilizan dos modelos diferentes
+		- Modelo de requisitos
+		- Modelo de casos de uso

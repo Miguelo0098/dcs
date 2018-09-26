@@ -1,0 +1,64 @@
+Modelo de requisitos
+- Definición
+	- Conjunto de requisitos
+		- Especificación de lo que se debería implementar
+	- Tipos
+		- Requisitos funcionales
+		- Requisitos no funcionales
+	- Creación
+		- Texto o herramienta de ingeniería de requisitos
+- Requisitos bien formados
+	- ¿Cómo listar los requisitos?
+		- Identificador único <id> (letras y numero)
+	- Nombre del sistema (<sistema>)
+	- Palabra clase (debería)
+	- Declaración de función (<funcionar>)
+	- Ej: <id> El <sistema> debería <funcionar>
+- Requisitos funcionales
+	- Definición
+		- Afirmación sobre lo que debería hacer el sistema
+	- Ejemplo:
+		- RF1 El sistema del cajero debería comprobar la validez de la tarjeta insertada
+- Requisitos no funcionales
+	- Definición
+		- Especifican o restringen como se debería implementar el sistema
+	- Ejemplos:
+		- RNF1 El sistema del cajero debería ser escrito en C++
+- Organizar los requisitos
+	- Objetivo
+		- Trabajar con un conjunto amplio de requisitos en dominios más pequeños y manejables.
+	- Usar taxonomías
+		- Jerarquía de tipos de requisitos
+		- Funcionales no funcionales
+		- Usar dos o tres niveles es suficiente
+	- Ejemplo:
+		- Requisitos funcionales: clientes, productos, pedidos, pago
+		- Requisitos no funcionales: rendimiento, capacidad, disponibilidad, seguimiento de estándares, seguridad
+- Atributos de los requisitos
+	- Objetivos
+		- Capturar información adicional sobre los requisitos
+	- ¿Cómo se define?
+		- Nombre descriptivo
+		- Valor
+	- ¿Cuáles?¿Cuántos?
+		- Dependerá de la naturaleza y necesidades del proyecto, así como de los tipos de requisitos
+	- Atributo prioridad
+		- Prioridad del requisito relativa al resto de requisitos
+		- Esquema MoSoCoW (Must have, Should have, Could have, Want to have)
+- Encontrar requisitos
+	- ¿Dónde? -> contexto
+		- Usuarios directos del sistema
+		- Otros grupos de decisión
+		- Otros sistemas con los que interactúa el sistema
+		- Dispositivos hardware con los que interactúa
+		- Restricciones legales y regulatorias
+		- Restricciones técnicas
+		- Objetivos de negocio
+	- Técnicas
+		- Entrevistas
+		- Cuestionarios
+		- Workshop de requisitos
+	- Cuidado con
+		- Eliminación
+		- Distorsión
+		- Generalización
