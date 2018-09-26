@@ -1,0 +1,14 @@
+WorkFlow: Requisitos Introducción
+- Propósito
+	- Captura de requisitos
+		- Proceso de averiguar lo que se debe construir.
+		- Mayor importancia al principio del proyecto.
+		- Crear una especificación de alto nivel sobre lo que el sistema debería de hacer.
+		- Preguntar a todos los interesados
+		- Condiciones y capacidades que el sistema debe cumplir
+- Visión general
+	- Pasos
+		- Enumerar requisitos candidatos
+		- Comprender el contexto del sistema
+		- Capturar requisitos funcionales
+		- Capturar requisitos no funcionales
