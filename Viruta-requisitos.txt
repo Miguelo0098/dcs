@@ -7,3 +7,6 @@ RF5 - El sistema debería comprobar si hay alguna clase de descuento para el via
 RF6 - El sistema debería hacer la venta de billetes para distintos trayectos y horarios por separado
 RF7 - El sistema debería elaborar un justificante de la factura del viaje
 RF8 - El sistema debería permitir descargar los datos de las ventas realizadas cuando el revisor se identifique.
+
+RNF1 - El sistema debería admitir pago por tarjeta de crédito.
+RNF2 - 
