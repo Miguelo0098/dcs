@@ -1,0 +1,142 @@
+Modelo de casos de uso
+- Introducción
+	- Características
+		- Forma diferente y complementaria de capturar requisitos
+		- Entrada principal al modelado de clases
+	- Elementos del modelo
+		- Límite del sistema
+		- Actores
+		- Casos de uso
+		- Relaciones
+	¿Cómo se crea?
+		- Identificar los límites del sistema
+		- Identificar los actores
+		- Identificar los casos de uso
+		- Iterar hasta que los casos de uso, los actores y los límites sea estables
+- Límites del sistema (Subject)
+	- Separa el sistema del resto del mundo
+		- Qué forma parte del sistema
+		- Qué es externo al sistema
+	- Viene definido por
+		- Quién o qué usa el sistema (actores)
+		- Qué beneficios proporciona el sistema a los actores
+	- Representación
+		- Caja con el nombre del sistema
+		- Los actores se dibujan fuera
+		- Los casos de uso se dibujan dentro
+- Actores
+	- ¿Qué son?
+		- Un papel (rol) que una entidad externa adopta cuando interactúa directamente con el sistema
+		- Varias entidades pueden representar el mismo rol
+		- Una entidad puede representar varios roles
+	- ¿Cómo se representan?
+		- Icono figura de hombre
+		- Icono clase estereotipada <<actor>>
+	- ¿Cómo identificar actores?
+		- Son entidades externas al sistema
+		- Interactúan directamente con el sistema
+		- No son personas o cosas específicas
+		- Un rol puede ser desempeñado por varias entidades
+	- ¿Cómo identificar actores?
+		- ¿Quién o qué usa el sistema?
+		- ¿Qué roles desempeñan en la interacción?
+		- ¿Quién instala el sistema?
+		- ¿Quién o qué obtiene y/o proporciona información?
+		- ¿Quién mantiene el sistema?
+		- ¿Qué otros sistemas interactúan con este sistema?
+		- ¿Quién o qué obtiene y/o proporciona información?
+		- ¿Sucede algo en un momento dado?
+	- Información asociada
+		- Nombre corto que sea representativo
+		- Breve descripción que describa el rol representa ese actor
+		- Atributos y eventos que podría recibir
+	- Actor especial: Tiempo
+		- Cuando necesitamos modelar algo que ocurre en un determinado momento y que no es activado por ningún actor
+- Casos de uso
+	- Definición 
+		- Especificación de una secuencia de acciones, incluyendo variantes y errores, que un sistema puede realizar al interactuar con agentes externos
+	- Más concreto
+		- Algo que un actor quiere que el sistema haga
+		- Descripción del comportamiento que un sistema exhibe para beneficiar a uno o más actores
+	- Importante
+		- Los casos de uso son iniciados siempre por un actor
+		- Los casos de uso son escritos siempre desde el punto de vista de los actores
+	- Identificar casos de uso
+		- Pensar en una lista de actores
+		- Preguntarse como van a usar cada uno el sistema
+		- A la par que se identifican casos de uso, se pueden encontrar nuevos actores
+	- Proceso iterativo de refinamiento
+		- Empezamos únicamente con el nombre
+		- Añadimos detalles poco a poco
+- Diagrama de casos de uso
+	- Quién usa la aplicación o sistema y qué puede hacer con él
+	- Nomenclatura de los elementos
+		- Los estándares de nomenclatura son esenciales para el desarrollo efectivo de un proyecto
+- Glosario de un proyecto
+	- ¿Qué es un glosario?
+		- Conjunto de palabra (ordenadas alfabéticamente), junto con sus definiciones, que versan sobre una disciplina
+	- ¿Por qué en el desarrollo de software?
+		- En cualquier dominio existe cierta cantidad de jerga y lenguaje propio
+	- Objetivo
+		- Definir los términos clave del proyecto y resolver sinónimos y homónimos
+		- Construir un vocabulario que sea común a todas las partes interesadas en el proyecto
+	- Estructura
+		- No existe un estándar UML
+		- Usar un formato tipo diccionario
+	- Importante
+		- Debe estar sincronizado con el modelo UML para que sea consistente
+- Detallar casos de uso
+	- Tenemos
+		- Diagrama de casos de uso
+		- Identificados los actores y casos de uso principales
+	- Lo siguiente
+		- Especificar los casos de uso
+- Especificación de casos de uso
+	- No existe un estándar UML
+		- Decidir un estándar y seguirlo en el proyecto
+		- Usar una plantilla tan sencilla como sea posible
+	- Plantilla
+		- Nombre
+		- Identificador
+		- Descripción breve
+		- Actores implicados en el caso de uso
+		- Precondiciones
+		- Flujo principal
+		- Postcondiciones
+		- Flujo alternativo
+	- Identificador
+		- Aparte del nombre, algo invariable -> número
+		- Útil para los flujos alternativos
+	- Breve descripción
+		- Párrafo que capture el objetivo principal del caso de uso
+	- Actor
+		- Actores principales
+		- Actores secundarios
+	- Precondiciones & postcondiciones
+		- Son restricciones
+		- Precondición: Restringe el estado del sistema antes de que empiece el caso de uso y actúan como guardianes que impiden a un actor activar el caso de uso hasta que se cumplan las condiciones
+		- Postcondición: restringe el estado del sistema después de que el caso de uso se haya ejecutado
+		- Si no hay -> "Ninguna"
+	- Flujo
+		- Pasos de un caso de uso -> flujo de eventos
+		- Flujo principal: Lista de pasos que capturan el "mundo perfecto"
+			- Todo sucede según lo esperado
+			- No existen errores y/o interrupciones
+		- Desviaciones del flujo principal
+			- Desviaciones simples
+			- Desviaciones complejas
+		- Comenzar con un actor haciendo algo
+		- Flujo de eventos, secuencias de pasos breves
+		- Ramificaciones dentro de un flujo
+			- Muy pocas ramificaciones que no afectan a las postcondiciones del caso de uso
+			- Si una ramificación produce un cambio en las postcondiciones, modelarlo usando un flujo alternativo
+			- Debe existir una expresión booleana inmediatamente despues de un "Si"
+			- Usar sangría y numeración para indicar claramente el cuerpo de la declaración "Si"
+			- Se puede usar un "si no(else)" para indicar que ocurre si la condición es falsa
+		- Repeticiones dentro de un flujo
+			- Repetir una acción varias veces dentro de un flujo de eventos
+			- "Para"
+			- "Mientras"
+		- Flujo alternativo
+		- Documentarlos
+		
