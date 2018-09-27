@@ -3,7 +3,6 @@
 
 2. ¿Los profesores y el personal administrativo deberían poder estar registrados en el sistema?
 
-
 3. Cada grupo tiene exclusivamente un profesor o hay grupos que tienen clase con más de un profesor a lo largo del curso?
 
 4. Los alumnos tienen la posibilidad de registrarse en la plataforma web?
@@ -11,6 +10,20 @@
 5. En algún momento el personal administrativo tiene contacto con los padres? o son solo los profesores los que pueden contactar con ellos?
 
 6. Es un servicio obligatorio? Se obligará a que los padres se registren en la plataforma?
+
+7. ¿Cuantos alumnos por grupo?
+
+8. ¿Acceso diferente para padres y alumnos? 
+
+9. Horarios de tutorías?Son los padres los que las solicitan o también tienen opción de pedirla los profesores?¿Tiempo de respuesta máximo por parte de los profesores?
+
+10. Un profesor puede dar a varios grupos?
+
+11. ¿La página debe de estar disponible en todo momento?
+
+12. ¿Cuanta gente debe de poder soportar a la vez mirando la página?(Posible colapso a la salida de notas)
+
+13. Enviar notificaciones via email???
 
 - alumnos por grupo: = 12 max teorico
 - las tutorias son bilaterales y los avisos se hacen de los profesores a los padres
