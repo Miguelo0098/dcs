@@ -1,0 +1,34 @@
+1. ¿Qué significado tienen los Grupos de inglés (P0, P1, P2, B1, B2, B3)?
+- Cada uno es un nivel con distintos grupos
+
+2. ¿Los profesores y el personal administrativo deberían poder estar registrados en el sistema?
+
+
+3. Cada grupo tiene exclusivamente un profesor o hay grupos que tienen clase con más de un profesor a lo largo del curso?
+
+4. Los alumnos tienen la posibilidad de registrarse en la plataforma web?
+
+5. En algún momento el personal administrativo tiene contacto con los padres? o son solo los profesores los que pueden contactar con ellos?
+
+6. Es un servicio obligatorio? Se obligará a que los padres se registren en la plataforma?
+
+- alumnos por grupo: = 12 max teorico
+- las tutorias son bilaterales y los avisos se hacen de los profesores a los padres
+- Administracion de los datos: academia
+- Dado de alta en el sistema: academia
+- plataforma: Padres only (los alumnos no pueden registrarse)
+- Unos padres pueden tener varios hijos en la academia
+- Avisos que tienen que llegar por email.
+- Pueden que los padres no esten registrados
+- 1 profesor puede dar clase a varios grupos
+- Disponibilidad 24/7
+- Avisos generales: Administrativos
+- Avisos particulares (de grupo): Profesores
+- Administrativos pueden contactar con padres
+- 3 grupos/nivel
+- 10 alumnos/grupos
+- Independiente del sistema de la administracion de la academia
+- tener en cuenta el tiempo de cuando se ha entrado en la plataforma y última conexión.
+- Carácter informativo no administrativo
+- Los datos de los avisos se mantendrán durante un par de años para aligerar carga
+- Las cuentas de los usuarios a los dos años de su matriculación deberan borrarse.
