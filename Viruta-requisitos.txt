@@ -9,4 +9,5 @@ RF7 - El sistema debería elaborar un justificante de la factura del viaje
 RF8 - El sistema debería permitir descargar los datos de las ventas realizadas cuando el revisor se identifique.
 
 RNF1 - El sistema debería admitir pago por tarjeta de crédito.
-RNF2 - 
+RNF2 - El sistema debería ser codificado en C++
+RNF3 - El sistema debería permitir al revisor confirmar la operación de descarga.
