@@ -39,15 +39,15 @@ RF El sistema deberia permitir a los administradores gestionar los grupos y los 
 NO FUNCIONALES:
 
 Disponibilidad:
-RNF El sistema deberia estar disponible el 99% del tiempo.
+RNF El sistema deberia estar disponible el 99% del tiempo.(M)
 Capacidad:
-RNF El sistema deberia permitir acceso simultaneo de 500 personas 
-RNF El sistema deberia poder almacenar al menos datos de 500 usuarios
+RNF El sistema deberia permitir acceso simultaneo de 500 personas (M)
+RNF El sistema deberia poder almacenar al menos datos de 500 usuarios(M)
 Rendimiento:
-RNF El sistema deberia permitir la identificación de un usuario en menos de 3 segundos.
-RNF El sistema deberia permitir el envio de simultaneas notificaciones en el menor tiempo posible.
+RNF El sistema deberia permitir la identificación de un usuario en menos de 3 segundos.(S)
+RNF El sistema deberia permitir el envio de simultaneas notificaciones en el menor tiempo posible.(S)
 Seguridad:
-RNF El sistema deberia de cifrar los datos privados de cada usuario.
-RNF El sistema deberia de denegar el acceso a datos de alumnos de personas agenas a ellos.
+RNF El sistema deberia de cifrar los datos privados de cada usuario.(M)
+RNF El sistema deberia de denegar el acceso a datos de alumnos de personas agenas a ellos.(M)
 
-dfasdfdsa
+
