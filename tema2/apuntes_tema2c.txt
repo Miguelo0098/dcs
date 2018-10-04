@@ -139,4 +139,35 @@ Modelo de casos de uso
 			- "Mientras"
 		- Flujo alternativo
 		- Documentarlos
-		
+		- Activación del flujo alternativo
+			- En lugar del flujo principal
+			- Después de un paso en particular en el flujo principal
+			- En cualquier momento durante el flujo principal
+		- Cómo encontrarlos
+			- Inspeccionar el flujo principal, buscando
+		- ¿Cuántos?
+			- Seleccionar los más importantes y documentarlos.
+			- Si existen grupos similares, documentar uno a modo de ejemplo y añadir notas sobre los otros
+- Seguimiento de requisitos
+	- Captura de requisitos
+		- Modelo de requisitos
+		- Modelo de casos de uso
+	- Relacionar ambos modelos
+		- Averiguar i hay algún requisito que no esté tratado en los casos de uso
+		- Averiguar si hay algun requisisto que esté tratado en los casos de uso y no esté en el modelo de requisitos
+	- Es difícil
+		- Relación muchos a muchos
+	- Relación muchos a muchos
+		- Un caso de uso tratará muchos requisitos funcionales individuales
+		- Un requisito funcional puede estar presente en varios casos de uso
+	- ¿Cómo?
+		- Matriz de trazabilidad
+- ¿Cuándo aplicar casos de uso?
+	- Mejor opción
+		- El sistema está dominado por requisitos funcionales
+		- El sistema tiene muchos tipos de usuarios
+		- El sistema tiene muchas interfaces
+	- No son una buena opción
+		- El sistema dominado por requisitos no funcionales
+		- El sistema tiene pocos usuarios
+		- El sistema tiene pocas interfaces
