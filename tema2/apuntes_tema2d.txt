@@ -1,0 +1,99 @@
+Modelado avanzado de casos de uso
+
+- Aspectos avanzados
+  - Generalización Actores
+    - Relación de generalización entre un actor más general y un actor más específico
+  - Generalización casos de uso
+    - Relación de generalización entre un caso de uso más general y otro más específico
+  - <<include>>
+    - Relación entre casos de uso que permite que un caso de uso incluya comportamiento del otro
+  - <<extend>>
+    - Relación entre casos de uso que permite que un caso e uso extienda su comportamiento con uno o más fragmentos de comportamiento de otro
+- Generalización Actores
+  - ¿Por qué?
+    - Similitudes entre el Cliente y el agenteVentas
+    - La similitud no está bien explicada
+  - Solución
+    - Usar la generalización para expresar la similitud y simplificar el diagrama
+  - ¿Cómo?
+    - Introducir un actor abstracto
+    - Los descendientes heredan todos los roles y relaciones de los casos de uso de su padre abstracto
+  - Ventajas
+    - Simplifica el diagrama de casos de uso
+    - Simplifica la semántica del modelo
+  - Principio de sustitución
+    - Podemos usar un descendiente en cualquier lugar donde se pudiera usar un antecesor
+  - Actor abstracto
+    - Representa un papel abstracto dentro del dominio
+    - No puede ser instanciado por una persona o cosa
+- Generalización de casos de uso
+  - ¿Cuándo?
+    - Tenemos varios casos de uso que son una especialización (hijos) de un caso más general (padre)
+  - Semántica
+    - Los hijos más específicos que el padre. Pueden: heredar características, añadir nuevas características y sobreescribir características heredadas
+  - Documentación
+    - Cada paso en el hijo está seguido por el paso equivalente en el padre, si existe
+    - Si el paso en el hijo cambia el paso del padre, se le antepone "o" número del paso del padre
+  - ¡¡¡CUIDADO!!!
+    - Puede llegar a ser inmanejable
+    - Tarea laboriosa y propensa a errores
+  - Solución 
+    - Casos de uso sin flujo principal, sólo descripción de la semántica
+    - No hay que preocuparse de la herencia o de los cambios
+  - Caso de uso abstracto
+    - Caso de uso padre que no tiene asociado un flujo de eventos o éste está incompleto
+    - Permite capturar comportamiento a un alto nivel de abstracción
+    - Tiene asociada una descripción del comportamiento que se espera implementen sus hijos
+- Relación <<include>>  
+  - Problema 
+    - Escribir casos de uso puede ser muy repetitivo
+  - Solución
+    - Extraer el comportamiento repetido a un caso de uso separado
+    - Relación <<include>>
+    - Especificar el punto exacto, en el caso base donde es necesario el comportamiento del caso de inclusión
+  - Funcionamiento
+    - El caso base se ejecuta hasta el punto de inclusión
+    - El control pasa al caso de inclusión, que se ejecuta de manera normal
+    - El control vuelve al siguiente paso del caso base
+  - ¡¡¡CUIDADO!!!
+    - El estado base no está completo sin todos los casos de inclusión
+- Relación <<extend>>
+  - Objetivo
+    - Proporcionar un medio para insertar un nuevo comportamiento en un caso de uso existente
+  - ¿Cómo?
+    - Caso de uso base
+    - Caso de uso extensión
+  - Características
+    - El caso base está completo sin las extensiones
+    - Los puntos de extensión no son parte del flujo
+    - Puede haber más de un punto de extensión
+  - Casos de uso de extensión
+    - Mismo número de segmentos que de puntos de extensión especificados en la relación
+    - Sólo un trozo de comportamiento
+    - Precondición
+    - Postcondición
+  - Funcionamiento
+    - El caso de uso base hasta el primer punto de extensión
+    - El control pasa al caso de uso de extensión, si hay alguno conectado en ese punto, que se ejecuta con normalidad
+    - El control vuelve al siguiente paso en el caso de uso base
+  - El caso de uso base es independiente de las extensiones que puedan estar o no conectadas
+  - Múltiples segmentos de inserción
+  - Extensiones condicionales
+    - Podemos especificar condiciones sobre las relaciones <<extend>>
+    - Las condiciones son expresiones booleanas y la inserción sólo se produce si la condición se evalúa a true
+    - Se puede conseguir el mismo efecto con las precondiciones y postcondiciones en el caso de uso de extensión, pero las condiciones en las relaciones son más explícitas
+  - Extensiones condicionales
+- Aspectos avanzados
+  - ¿Cuándo?
+    - Cuando simplifiquen el modelo de casos de uso
+    - Mejoren la claridad global del modelo de casos de uso
+- Sugerencias
+  - Casos de uso breves y sencillos
+    - Sólo el detalle necesario para capturar los requisitos
+    - El flujo no debe ocupar más de una hoja de papel
+  - Centrarse en el qué, no en el cómo
+    - El sistema pide al Cliente que confirme el pedido
+    - El cliente pulsa el botón de Aceptar (NO)
+    - El cliente acepta el pedido (SI)
+  - Evitar la descomposición funcional
+    - Casos de uso de alto nivel, bajo nivel y primitivos
