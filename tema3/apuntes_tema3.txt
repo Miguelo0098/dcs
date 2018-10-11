@@ -1,0 +1,12 @@
+Workflow: Análisis Introducción
+
+- Introducción
+	- Objetivos análisis
+		- Analizar los requisitos en mayor profundidad
+		- Refinarlos
+		- Estructurarlos
+	- Consigue...
+		- Crear un modelo que captura el comportamiento deseado del sistema
+	- Modelo de análisis
+		- Qué necesita hacer el sistema
+		- No cómo lo hará
