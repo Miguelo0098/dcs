@@ -23,9 +23,9 @@ int main(int argc, char const *argv[])
 	}
 
 	double a, b, c;
-	a = atod(argv[1]);
-	b = atod(argv[1]);
-	c = atod(argv[1]);
+	a = atol(argv[1]);
+	b = atol(argv[2]);
+	c = atol(argv[3]);
 
 	printf("ECUACIÓN: %lfx^2 + %lfx + %lf = 0\n", a, b, c);
 	printf("RESULTADOS: \n");

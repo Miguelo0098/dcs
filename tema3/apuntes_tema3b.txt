@@ -1,0 +1,113 @@
+Diagramas de actividad
+
+- Introducción
+	- ¿Qué es un diagrama de actividad?
+		- Diagrama de flujo orientado a objetos
+		- Conjunto de nodos conectados por arcos
+	- ¿Para qué sirven?
+		- Modelar el comportamiento de un proceso que ocurre en el sistema
+	- ¿Características?
+		- No es necesario especificar la estructura estática del sistema
+		- Notación similar a los diagramas de flujos
+		- Útiles para describir procesos a una audiencia general
+		- Semántica basada en las redes de Petri
+	- ¿Dónde utilizarlos?
+		- Análisis
+		- Diseño
+		- Modelado de negocio
+- Elementos
+	- Nodos
+		- Acción
+		- Control
+		- Objetos
+	- Arcos
+		- Representan el flujo a través de una actividad
+- Sintaxis Actividad
+	- Precondiciones-postcondiciones
+		- Locales
+		- Generales
+	- Los arcos muy largos se pueden partir
+		- Usar parejas de conectores
+	- Acción != Actividad
+		- Actividad (Lo que modelamos, conjunto de pasos)
+		- Acción (Cada uno de los pasos)
+- Semántica
+	- Basada en "Token game"
+		- Conjunto de token que se mueven a lo largo de una red de nodos y arcos
+	- ¿Cómo funciona una actividad?
+		- Conjunto de tokens imaginarios
+		- Los tokens pasan de un nodo fuente a un nodo destino a través de un arco
+		- Una acción no se activa hasta que tenga tokens suficientes
+- Tipos de nodos. Nodos de acción
+	- Características
+		- Unidades atómicas de trabajo dentro de una actividad
+		- Representan acciones
+	- 4 tipos
+		- Llamada (call action node)
+		- Envío de señal (send signal)
+		- Acepta señal (receive signal)
+		- Acepta un evento de tiempo (accept time event)
+	- Call action node
+		- Actividad
+		- Comportamiento
+		- Operación
+	- Signal action nodes
+		- Sirven para representar interacciones con agentes externos
+		- Señal (signal)
+		- Señal recibida (se acepta un evento)
+		- Señal enviada
+		- Puede aparecer un nodo tipo "receive" sin que tenga flujo de entrada
+	- Time event action node
+		- Sirven para modelar el concepto tiempo en una actividad
+- Tipos de nodos. Nodos de control
+	- Características
+		- Gestionan el flujo de control dentro de una actividad
+	- 5 tipos
+		- Initial node
+		- Final node	
+		- Decision node
+		- Merge node
+		- Fork node
+		- Join node
+	- Initial node
+		- Indica donde comienza una actividad
+		- Puede haber más de uno
+	- Activity final node
+		- Para todos los flujos dentro de una actividad
+		- Puede haber varios
+	- Flow final node
+		- Para un flujo determinado dentro de la actividad
+		- El resto de flujos no se ven afectados
+	- Decision node
+		- Se usa cuando se quiere ejecutar diferentes secuencias de acciones dependiendo de una condición
+		- Cada rama de decisión contiene una condición de guarda escrita entre corchete
+	- Merge node
+		- Se usa para unir los diferentes flujos de un comportamiento condicional
+	- Fork and join nodes
+		- Se usan para representar acciones que se ejecutan concurrentemente en una actividad
+- Tipos de nodos. Nodos de objeto
+	- Características
+		- Permiten representar objetos que son importantes en el proceso que se está modelando
+		- Indican los objetos que están disponibles en un punto concreto de una actividad
+		- Actúan como un buffer de token de objetos
+		- Permiten mostrar objetos en un estado determinado
+		- Pueden ser usados para proporcionar entradas y salidas a una actividad
+	- Pins
+		- Forma compacta de representar los nodos objeto
+		- Los diagramas son más limpios
+- Aspectos avanzados
+	- Regiones de actividad interrumpibles
+		- Regiones de un diagrama de actividad que pueden interrumpirse cuando un token atraviesa un arco de interrupción
+		- Cuando la región es interrumpida, todos los flujos que hayan en ella terminan
+	- Manejo de excepciones
+		- Útil para el manejo de errores y excepciones
+		- Se modela mediante nodo protegido, exception pin y exception handler
+	- Nodos de expansión
+		- Nodo objeto que representa una colección de objetos que se van a utilizar dentro de una zona de expansión
+		- Las acciones de la zona de expansión se realizan una vez para cada objeto de la colección
+		- Permiten mostrar como se procesa un conjunto de objetos dentro de la zona de expansión
+	- Particiones o carriles
+		- Permiten organizar las acciones
+		- Divisiones
+		- Pueden existir jerarquías
+		
