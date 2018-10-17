@@ -10,3 +10,85 @@ Workflow: Análisis Introducción
 	- Modelo de análisis
 		- Qué necesita hacer el sistema
 		- No cómo lo hará
+- Análisis != Diseño e implementación
+	- Podemos analizar los requisitos al mismo tiempo que diseñamos e implementamos el sistema?
+	- Necesitamos
+		- Comprensión precisa y detallada de los requisitos
+		- Estructura de los requisitos
+	- Conseguimos
+		- Separaión de intereses
+		- Afrontar el proyecto con más tranquilidad
+- Papel de análisis en el ciclo de vida de un software
+	- Empieza al final de la fase de comienzo
+	- Foco principal: fase de elaboración
+	- Continúa en las primeras iteraciones de la fase de construcción
+- Artefactos (Clases de análisis)
+	- Clases de análisis:
+		- Modelan conceptos clave en el dominio de negocio
+		- Representan una abstracción de clases y/o subsistemas del diseño del sistema.
+	- Características
+		- Se centran en el tratamiento de requisitos funcionales
+		- Es más conceptual, de mayor granularidad
+		- El comportamiento se define mediante responsabilidades
+		- Define atributos, pero a alto nivel
+		- Participa en relaciones, pero son más conceptuales
+	- Tres tipos básicos:
+		- Clase de interfaz
+		- Clases de entidad
+		- Clases de control
+- Artefactos (Realización de casos de uso)
+	- Definición
+		- Colaboración dentro del modelo de análisis
+	- Proporciona
+		- Una traza directa hacia un caso de uso concreto
+	- Posee
+		- Descripción textual del flujo de sucesos
+		- Diagrama de clases
+		- Diagramas de interacción
+- Artefactos (Paquete de análisis)
+	- Proporciona un medio para organizar los artefactos del modelo de análisis
+		- Clases de análisis
+		- Realizaciones de casos de uso
+		- Paquetes de análisis
+	- Características
+		- Deben ser cohesivos
+		- Débilmente acoplados
+- Trabajadores 
+	- Arquitecto
+		- Responsable de integridad del modelo de análisis y la arquitectura del modelo de análisis
+		- No es responsable del desarrollo y mantenimiento de los diferentes artefactos
+	- Ingeniero de casos de uso
+		- Responsable de integridad de una o más relaciones de casos de uso
+		- No es responsable de las clases de análisis ni de las relaciones
+	- Ingeniero de componentes
+		- Responsable de mantener la integridad de uno o varios paquetes y de las clases de análisis contenidas en él
+- Actividades
+	- Análisis de la arquitectura
+		- Esboza el modelo e análisis y la arquitectura
+		- Identificar paquetes de análisis, clases de análisis, Requisitos especiales comunes
+	- Analizar un caso de uso
+		- Identificar las clases de análisis
+		- Distribuir el comportamiento del caso de uso entre los objetos del análisis que interactúan
+		- Capturar requisitos especiales sobre la realización del caso de uso
+	- Analizar una clase
+		- Identificar y mantener las responsabilidades de una clase del análisis
+		- Identificar y mantener los atributos y relaciones de la clase del análisis
+		- Capturar requisitos especiales sobre la realización de la clase del análisis
+	- Analizar un paquete
+		- Garantizar que el paquete es tan independiente de otros paquetes como sea posible
+		- Garantizar que el paquete cumple su objetivo de realizar alguna de las clases del dominio o casos de uso
+		- Describir las dependencias
+- Reglas generales
+	- El modelo de análisis -> lenguaje del negocio
+		- Abstracciones del modelo de análisis deben formar parte del vocabulario del dominio del negocio
+	- Modelos que cuenten una historia
+		- Aclarar alguna parte importante del comportamiento deseado del sistema
+	- Capturar la idea general
+		- No atascarse en detalles de cómo funcionará el sistema
+	- Distinguir entre el dominio del problema y el dominio de la solución
+		- Requisitos del problema
+		- Consideraciones detalladas de diseño
+	- Minimizar el acoplamiento
+		- Las clases relacionadas deben conocer lo mínimo unas de otras
+	- Herencia si hay jerarquía natural
+		- No por reutiliza código
