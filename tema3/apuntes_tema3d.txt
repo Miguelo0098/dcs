@@ -32,3 +32,5 @@ Encontrar Clases de Análisis
 		- Cuidado con poner muchas clases pequeñas
 		- Cuidado con pocas clases grandes
 		- Cuidado con las functoid
+		- Cuidado con las clases omnipotentes
+		- Evitar árboles de herencia profundos
