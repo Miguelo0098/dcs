@@ -1,1 +1,34 @@
 Encontrar Clases de Análisis
+
+- Clases de análisis
+	- Son clases que...
+		- Representan una abstracción definida y concreta del dominio del problema
+		- Deben corresponder con algún concepto del mundo real
+		- No deben nacer de consideraciones de diseño
+	- Anatomía de una clase de análisis
+		- Conjunto de atributos a "alto nivel"
+		- Conjunto de responsabilidades a "alto nivel"
+	- Anatomía
+		- Nombre Y
+		- Atributos Y
+		- Operaciones Y
+		- Visibilidad X
+		- Estereotipos ?
+		- Valores etiquetados ? 
+	- Conceptos
+		- Responsabilidad
+		- Cohesivo
+		- Acoplamiento
+	- Características de una buena clase de análisis
+		- Su nombre refleja su propósito
+		- Es una abstracción concreta que modela un elemento específico del dominio del problema
+		- Se corresponde claramente con una característica identificable del dominio del problema
+		- Tiene un conjunto pequeño y bien definido de responsabilidades
+		- Tiene alta cohesión
+		- Tiene bajo acoplamiento
+	- Reglas de oro para crear buenas clases
+		- 3 a 5 responsabilidades por clase
+		- Cada clase colabora con otras
+		- Cuidado con poner muchas clases pequeñas
+		- Cuidado con pocas clases grandes
+		- Cuidado con las functoid
