@@ -1,0 +1,160 @@
+Objetos y clases
+
+- ¿Qué son objetos?
+	- UML Reference Manual
+		- Entidad discreta con unos límites bien definidos que encapsula estado y comportamiento; una instancia de una clase.
+	- Más sencillo
+		- Conjunto de datos y funciones relacionados entre sí, empaquetados en una unidad que puede ser reutilizable
+	- Instancias de una clase
+		- Define un conjunto de características (atributos y operaciones) que son comunes a todas las instancias.
+	- Un objeto tiene
+		- Atributos: datos
+		- Operaciones (funciones): comportamiento
+	- Propiedades comunes a todos los objetos
+		- Identidad
+		- Estado
+		- Comportamiento
+- Encapsulación
+	- ¿Qué significa?
+		- Los datos (Valores de los atributos) quedan escondidos dentro del objeto
+		- Sólo se puede acceder a ellos a través de las operaciones
+	- Ventajas
+		- Software más robusto y ampliable
+		- No es necesario preocuparse por la estructura de los datos ocultos, sólo de lo que el objeto puede hacer
+- Mensajería
+	- ¿Cómo agrupamos objetos para crear sistemas software?
+		- Los objetos colaboran unos con otros
+		- Establecen vínculos
+		- Al recibir un mensaje
+	- Estructura en tiempo de ejecución SOO
+		- Conjunto de objetos que se crean, permanecen y se destruyen
+- Sintaxis de objetos en UML
+	- Variantes identificador objeto
+		- El nombre del objeto:nombre de la clase
+		- Solamente el nombre de la clase
+		- Solamente el nombre del objeto
+	- Operaciones
+		- Todos los objetos de una clase tienen el mismo conjunto de operaciones y atributos
+		- Se muestran en el diagrama de clases, no aquí
+	- Atributos
+		- Se pueden mostrar opcionalmente
+		- Los tipos se suelen omitir para simplificar
+	- Nomenclatura
+		- Objetos y atributos -> lowerCamelCase
+		- Clases -> UpperCamelCase
+- ¿Qué son clases?
+	- UML Reference Manual
+		- Descriptor para un conjunto de objetos que comparten los mismos atributos, operaciones, métodos, relaciones y comportamientos
+	- Más sencillo
+		- Descriptor para un conjunto de objetos que tienen las mismas características
+	- Clase
+		- Permite modelar conjuntos de objetos que tienen el mismo conjunto de características.
+	- Clasificador-instancia
+		- Clase-objeto
+	- Objetos
+		- Valores específicos para los atributos definidos
+		- Responderán a los mensajes al invocar las operaciones
+- ¿Cuántas clases?
+	- La clasificación es la forma más importante de ordenar la información sobre el mundo
+- Clases y objetos
+	- ¿Cómo se relacionan clases y objetos?
+		- Relación <<instantiate>>
+		- Relación de dependencia (------->) estereotipada
+	- Relación
+		- Conexión entre elementos de un modelo
+	- Relación dependencia
+		- Relacion entre dos elementos en los que el cambio en un elemento (proveedor) puede afectar o proporcionar información necesaria para el otro elemento (cliente)
+	- Estereotipada
+		- <<...>>
+		- Forma de personalizar elementos de modelado
+		- Crear variaciones con nueva semántica
+		- <<instantiate>>
+	- Instanciar
+		- Crear una instancia específica de algo a partir de una plantilla
+		- Los objetos son instancias de una clase
+	¿Cómo crear instancias?
+		- Operaciones especiales: Constructores
+		- Se le asigna memoria al nuevo objeto
+		- Se le asigna una identidad única
+		- Se establecen valores iniciales para los atributos
+		- Se establecen vínculo con otros objetos
+- Sintaxis de clases en UML
+	- Nomenclatura
+		- UpperCamelCase
+		- Usar nombres descriptivos
+		- Evitar abreviaciones
+	- ¿Hay que mostrarlo todo?
+		- Compartimento del nombre -> obligatorio
+		- Resto -> opcionales
+	- ¿Qué mostrar?
+		- Dependerá de la finalidad del diagrama
+		- Modelo análisis
+	- Compartimento de atributos
+		- <visibilidad> <nombre>:<tipo>[multiplicidad]=<valorInicial>
+		- Todo es opcional salvo el nombre
+		- <valorInicial> es el valor que se le asigna al atributo cuando se crea un objeto (se instancia)
+		- Nomenclatura: lowerCamelCase, nombres descriptivos, Evitar abreviaciones
+		- Pueden llevar delante un estereotipo y detrás un conjunto de valores etiquetados
+- Sintaxis de clases en UML (Compartimento atributos)
+	- Visibilidad
+		- Adorno que se aplica a atributos y operaciones
+		- No se utiliza en el modelo de análisis
+		- (+) pública
+		- (-) privada
+		- (#) protegida
+		- (~) paquete
+	- Tipo
+		- Otra clase o tipo primitivo
+		- 4 tipos primitivos en UML (int, naturalIlimitado, bool y string)
+		- Se pueden utilizar los tipos de un lenguaje concreto
+		- Añadir tipos primitivos
+	- Multiplicidad
+		- Nos permite modelar colecciones de elementos
+		- Restricciones sobre el número de elementos que participan en una relación
+		- [0 .. 1] indica que el atributo puede tomar el valor null
+- Sintaxis de clases en UML (Compartimento de operaciones)
+	- Operación
+		- Función asociada a una clase en particular
+		- Signature: <visibilidad><nombre>(<propósito><nombreP>:<tipoP>=<default>):<tipoRetorno>
+	- Nomenclatura
+		- Operaciones: lowerCamelCase, verbos o frases que indiquen acción, evitar símbolos especiales y abreviaturas
+		- Parámetros: lowerCamelCase, nombres o sintagmas nominales
+	- Tipo de retorno
+		- Las operaciones pueden devolver varios objetos
+		- Más de un tipo de retorno
+	- Propósito del parámetro
+		- in (default): entrada a la operación (no se modifica)
+		- out: repositorio para salida
+		- inout: entrada a la operación (puede modificarse)
+		- return: lo devuelve la operación
+	- Propósito del parámetro
+		- Característica usada en un diseño muy detallado
+	- Ejemplos
+		- maximo(in a:Integer, in b:Integer): Integer
+		- maxMin(in a:Integer, in b:Integer): Integer, Integer
+		- maxMin(in a:Integer, in b:Integer, return max:Integer, return min:Integer)
+	Valores por defecto de los parámetros
+		- Se le asigna un valor por defecto al parámetro
+		- Al invocar a la función, si no se le asigna ningún valor al parámetro, se utiliza el valor por defecto
+		- Caracterísitica raramente usada en el análisis
+	- Operaciones de consulta
+		- Operaciones que no modifican el estado del objeto sobre el que son llamadas
+		- Sus nombres suelen empezar por get/obtener
+- Ámbito
+	- Definición
+		- Lugar de aplicación de los atributos y operaciones
+	- Tipos
+		- Ámbito de instancia
+		- Ámbito de clase
+	- El ámbito determina el acceso
+		- Las operaciones con ámbito de instancias:
+			- Otros atributos y operaciones con ámbito de instancia
+			- Todas las operaciones y atributos con ámbito de clase
+		- Las operaciones con ámbito de clase
+			- Operaciones y atributos con ámbito de clase
+			- NO operaciones o atributos con ámbito de instancia
+- Construcción de objetos
+	- ¿Cómo crear instancias de una clase?
+		- Constructores
+		- Constructor sin parámetros
+		- Constructor con parámetros 
