@@ -1,0 +1,62 @@
+Relaciones entre clases de análisis
+
+- ¿Qué es una relación?
+	- Definición
+		- Una conexión con significado entre elementos de modelado
+		- Forma de conectar unos elementos con otros
+	- Ejemplos de relaciones vistas
+		- Entre actores y casos de uso
+		- Entre casos de uso y casos de uso
+		- Entre actores y actores
+	- Veremos
+		- Relaciones entre objetos (vínculo)
+		- Relaciones entre clases (asociaciones)
+- Vínculos
+	- Crear un sistema orientado a objetos funcional
+		- Los objetos no pueden existir aisladamente
+	- Crear un sistema orientado a objetos funcional
+	- Los objetos deben conectarse unos con otros
+	- Vínculo (link)
+		- Conexión entre dos objetos
+		- Forma que tienen los objetos de comunicarse
+		- Permiten mandar mensajes entre objetos
+		- Se implementan mediante punteros o referencias
+- Diagrama de objetos
+	- Qué muestra...
+		- Los objetos y sus relaciones en un momento determinado
+	- Consideraciones
+		- El rol que desempeña un objeto en un diagrama de objetos es algo diinámico, puede cambiar con el tiempo
+		- Los vínculos suelen conectar exactamente dos objetos
+		- Podemos especificar en qué sentido se envían los mensajes usando la navegabilidad
+- Asociaciones
+	- ¿Qué es?
+		- Relacion entre clases
+		- Indican que existe un vínculo entre los objetos de esas clases
+	- Sintaxis
+		- Nombre asociación:
+			- Sintagmas verbales -> representan acciones
+			- Punta de flecha para indicar en qué dirección leer la asociación
+			- lowerCamelCase
+		- Nombres de los roles
+			- En uno u ambos lados de la asociación
+			- Sintagmas nominales
+			- Representan los papeles que desempeñan los objetos vinculados a la asociación
+			- lowerCamelCase
+	- Multiplicidad
+		- Restricción que especifica el número de objetos de una clase que participan en una relación en cualquier momento en el tiempo
+		- Se expresa como un intervalo
+		- Si no se indica explícitamente -> pendiente de determinar o no multiplicidad por defecto
+	- Asociación reflexiva
+		- Una clase tiene una relación consigo misma
+		- Los objetos de esa clase tienen vínculos a otros objetos de la misma clase
+	- Navegabilidad
+		- Posibilidad de enviar mensajes solo en la dirección de la flecha
+		- Opciones de representación
+			- Navegabilidad estricta
+			- Navegabilidad invisible
+			- Práctica estándar
+	- Interpretación
+		- Los objetos de A tienen un pseudo atributo de la clase B
+		- Los lenguajes de programación no tienen soporte para asociaciones
+	- Interpretación
+		- Si el destino tiene multiplicidad mayor que 1 -> atributo tipo array/Atributo de algún tipo colección
