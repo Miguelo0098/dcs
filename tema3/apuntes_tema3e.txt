@@ -60,3 +60,15 @@ Relaciones entre clases de análisis
 		- Los lenguajes de programación no tienen soporte para asociaciones
 	- Interpretación
 		- Si el destino tiene multiplicidad mayor que 1 -> atributo tipo array/Atributo de algún tipo colección
+		- ¿Cómo modelamos? ¿Asociación o atributo?
+			- Atributo
+			- Asociación
+		- Clase de asociación
+			- Cada objeto Alumno puede cursar varios objetos Asignatura
+			- Cada objeto Asignatura puede tener matriculados varios objetos Alumno
+			- Cuando un objeto Alumno cursa un objeto Asignatura, el Alumno tiene una calificación.
+			- Formada por la clase, la asociación y la linea discontínua
+			- Restricción: sólo puede existir un vínculo entre dos objetos específicos
+			- Un alumno concreto puede tener solo una calificación con una Asignatura concreta
+		- Asociación cosificada
+			- Un Alumno concreto puede tener varias calificaciones con una asignatura concreta
